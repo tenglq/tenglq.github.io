@@ -24,10 +24,10 @@
     <!--Title-->
 
 
-<title>Hello World | Tenglq blogs</title>
+<title>Hello World | 乐趣工厂</title>
 
 
-    <link rel="alternate" href="/atom.xml" title="Tenglq blogs" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="乐趣工厂" type="application/atom+xml">
 
 
     <link rel="icon" href="/favicon.ico">
@@ -203,8 +203,20 @@
 
     <div id="comments">
         
-    <div id="uyan_frame"></div>
-    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=905617"></script>
+    <script type="text/javascript" src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+        id: window.location.pathname,
+        owner:"tenglq",
+        repo:"https://github.com/tenglq/tenglq.github.io.git",
+        oauth: {
+          client_id:"5cc7922e390d9bc8f61e",
+          client_secret:"ac8a6f5997dc763f20bc74c209003b2654a8103c"
+        },
+        perPage:"10",
+    });
+    gitment.render('comments');
+    </script>
 
 
 
@@ -239,9 +251,9 @@
         
         <div class="widget">
             <div class="about-me">
-                <img src="/img/wx.png" alt="Tenglq blogs">
+                <img src="/img/wx.png" alt="乐趣工厂">
                 <h2>滕林强</h2>
-                <p>曾在携程、同程担任高级开发工程师职务，对分布式系统，高并发，高性能，微服务有研究，目前在复星集团担任研发经理职务</p>
+                <p>发表是最好的记忆，实践是最好的成长。</p>
             </div>
         </div>
 
