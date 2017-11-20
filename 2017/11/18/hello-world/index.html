@@ -203,20 +203,21 @@
 
     <div id="comments">
         
-    <div id="comments"></div>
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
     <script type="text/javascript" src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
     <script>
     var gitment = new Gitment({
         id: window.location.pathname,
         owner:"tenglq",
-        repo:"https://github.com/tenglq/tenglq.github.io.git",
+        repo:"tenglq.github.io",
         oauth: {
           client_id:"5cc7922e390d9bc8f61e",
           client_secret:"ac8a6f5997dc763f20bc74c209003b2654a8103c"
         },
         perPage:"10",
     });
-    gitment.render('comments');
+    gitment.render('container');
     </script>
 
 
